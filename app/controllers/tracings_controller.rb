@@ -10,6 +10,7 @@ class TracingsController < ApplicationController
   # GET /tracings/1
   # GET /tracings/1.json
   def show
+    @tracing = Tracing.find(params[:id])
   end
 
   # GET /tracings/new
