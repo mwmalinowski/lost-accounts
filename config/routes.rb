@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :tracings
 
   get 'tracings/index'
+  get 'tracings/inside/:inside' => 'tracings#inside'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

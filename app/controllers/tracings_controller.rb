@@ -13,6 +13,11 @@ class TracingsController < ApplicationController
     @tracing = Tracing.find(params[:id])
   end
 
+  def inside
+    # Multiple inside territory codes can be specified as a comma-separated list
+    @tracings = Tracing.where(inside: params[:inside].split(','))
+  end
+
   # GET /tracings/new
   def new
     @tracing = Tracing.new
