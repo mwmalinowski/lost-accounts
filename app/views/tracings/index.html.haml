@@ -1,0 +1,53 @@
+%h1 Listing tracings
+
+%table
+  %tr
+    %th Record
+    %th Dist
+    %th Inside
+    %th Shipto
+    %th Add1
+    %th Add2
+    %th Add3
+    %th Add4
+    %th City
+    %th St
+    %th Prod type
+    %th Contract
+    %th Prod no
+    %th Description
+    %th Qty
+    %th Ext amnt
+    %th Inv date
+    %th Sklar
+    %th
+    %th
+    %th
+
+  - @tracings.each do |tracing|
+    %tr
+      %td= tracing.record_id
+      %td= tracing.dist_id
+      %td= tracing.inside
+      %td= tracing.shipto
+      %td= tracing.add1
+      %td= tracing.add2
+      %td= tracing.add3
+      %td= tracing.add4
+      %td= tracing.city
+      %td= tracing.st
+      %td= tracing.prod_type
+      %td= tracing.contract
+      %td= tracing.prod_no
+      %td= tracing.description
+      %td= tracing.qty
+      %td= tracing.ext_amnt
+      %td= tracing.inv_date
+      %td= tracing.sklar_id
+      %td= link_to 'Show', tracing
+      %td= link_to 'Edit', edit_tracing_path(tracing)
+      %td= link_to 'Destroy', tracing, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Tracing', new_tracing_path
