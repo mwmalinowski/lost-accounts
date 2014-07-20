@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %b Identifier:
+  = @lost_account.identifier
+
+= link_to 'Edit', edit_lost_account_path(@lost_account)
+\|
+= link_to 'Back', lost_accounts_path

@@ -1,0 +1,13 @@
+= form_for @lost_account do |f|
+  - if @lost_account.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@lost_account.errors.count, "error")} prohibited this lost_account from being saved:"
+      %ul
+        - @lost_account.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :identifier
+    = f.text_field :identifier
+  .actions
+    = f.submit 'Save'

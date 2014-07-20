@@ -1,0 +1,19 @@
+%h1 Listing lost_accounts
+
+%table
+  %tr
+    %th Identifier
+    %th
+    %th
+    %th
+
+  - @lost_accounts.each do |lost_account|
+    %tr
+      %td= lost_account.identifier
+      %td= link_to 'Show', lost_account
+      %td= link_to 'Edit', edit_lost_account_path(lost_account)
+      %td= link_to 'Destroy', lost_account, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Lost account', new_lost_account_path
