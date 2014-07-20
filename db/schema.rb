@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140716122813) do
+ActiveRecord::Schema.define(version: 20140719164953) do
 
   create_table "tracings", force: true do |t|
     t.string   "record_id"
