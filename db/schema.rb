@@ -13,6 +13,30 @@
 
 ActiveRecord::Schema.define(version: 20140719164953) do
 
+  create_table "lost_accounts", force: true do |t|
+    t.string   "identifier"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "sales_rep_id"
+  end
+
+  create_table "sales_reps", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "nickname"
+  end
+
+  create_table "territories", force: true do |t|
+    t.string   "code"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "territory_id"
+    t.integer  "sales_rep_id"
+  end
+
+  add_index "territories", ["sales_rep_id"], name: "index_territories_on_sales_rep_id"
+
   create_table "tracings", force: true do |t|
     t.string   "record_id"
     t.string   "dist_id"
@@ -34,6 +58,7 @@ ActiveRecord::Schema.define(version: 20140719164953) do
     t.string   "sklar_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "sales_rep_id"
   end
 
 end

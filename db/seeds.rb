@@ -5,6 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+# Tracings
 Tracing.create( record_id: %q^6091646^, dist_id: %q^OM^, inside: %q^770^, shipto: %q^OWENS & MINOR - ALLENTOWN,OWENS & MINOR - ALLENTOWN^, add1: %q^^, add2: %q^^, add3: %q^^, add4: %q^^, city: %q^PA^, st: %q^IB^, prod_type: %q^SS^, contract: %q^1140^, prod_no: %q^22-2222^, description: %q^SOME INSTRUMENT^, qty: %q^1^, ext_amnt: %q^0^, inv_date: %q^6/20/2014^, sklar_id: %q^999999^ )
 Tracing.create( record_id: %q^6091663^, dist_id: %q^OM^, inside: %q^765^, shipto: %q^KANSAS CITY DISTRIBUTION CENTER^, add1: %q^^, add2: %q^^, add3: %q^^, add4: %q^^, city: %q^KANSAS CITY^, st: %q^MO^, prod_type: %q^SS^, contract: %q^1140^, prod_no: %q^22-2222^, description: %q^SOME INSTRUMENT^, qty: %q^5^, ext_amnt: %q^0^, inv_date: %q^6/20/2014^, sklar_id: %q^999999^ )
 Tracing.create( record_id: %q^6091696^, dist_id: %q^GM^, inside: %q^765^, shipto: %q^SPECTRUM HEALTHCARE RESOURCES INC^, add1: %q^^, add2: %q^^, add3: %q^^, add4: %q^^, city: %q^SAINT LOUIS^, st: %q^MO^, prod_type: %q^SS^, contract: %q^1140^, prod_no: %q^22-2222^, description: %q^SOME INSTRUMENT^, qty: %q^4^, ext_amnt: %q^46.04^, inv_date: %q^6/20/2014^, sklar_id: %q^999999^ )
@@ -1116,3 +1118,35 @@ Tracing.create( record_id: %q^6091313^, dist_id: %q^AL^, inside: %q^700^, shipto
 Tracing.create( record_id: %q^6091329^, dist_id: %q^AL^, inside: %q^770^, shipto: %q^CHS SPRINGFIELD MEDICAL ASSOC^, add1: %q^^, add2: %q^^, add3: %q^^, add4: %q^^, city: %q^FLOURTOWN^, st: %q^PA^, prod_type: %q^SS^, contract: %q^1140^, prod_no: %q^22-2222^, description: %q^SOME INSTRUMENT^, qty: %q^1^, ext_amnt: %q^9.66^, inv_date: %q^6/19/2014^, sklar_id: %q^999999^ )
 Tracing.create( record_id: %q^6091335^, dist_id: %q^AL^, inside: %q^770^, shipto: %q^CHS MEMORIAL SURGICAL SPECIALI^, add1: %q^^, add2: %q^^, add3: %q^^, add4: %q^^, city: %q^YORK^, st: %q^PA^, prod_type: %q^SS^, contract: %q^1140^, prod_no: %q^22-2222^, description: %q^SOME INSTRUMENT^, qty: %q^1^, ext_amnt: %q^29.34^, inv_date: %q^6/19/2014^, sklar_id: %q^999999^ )
 Tracing.create( record_id: %q^6091548^, dist_id: %q^OM^, inside: %q^710^, shipto: %q^OWENS & MINOR - MINNEAPOLIS^, add1: %q^^, add2: %q^^, add3: %q^^, add4: %q^^, city: %q^MOUNDS VIEW^, st: %q^MN^, prod_type: %q^SS^, contract: %q^1140^, prod_no: %q^22-2222^, description: %q^SOME INSTRUMENT^, qty: %q^1^, ext_amnt: %q^0^, inv_date: %q^6/20/2014^, sklar_id: %q^999999^ )
+
+# SalesReps
+SalesRep.create( name: "Brown Vincent",   nickname: "Brown"   )
+SalesRep.create( name: "Deitra DiMidio",  nickname: "Deitra"  )
+SalesRep.create( name: "Ed Jensen",       nickname: "Ed"      )
+SalesRep.create( name: "Erik Knight",     nickname: "Erik"    )
+SalesRep.create( name: "Mark Remaley",    nickname: "Mark"    )
+SalesRep.create( name: "Matt List",       nickname: "Matt"    )
+SalesRep.create( name: "Steve Wiltmer",   nickname: "Steve"   )
+SalesRep.create( name: "Vance Parsons",   nickname: "Vance"   )
+
+#Territories
+Territory.create( code: '700' )
+Territory.create( code: '705' )
+Territory.create( code: '710' )
+Territory.create( code: '715' )
+Territory.create( code: '720' )
+Territory.create( code: '725' )
+Territory.create( code: '730' )
+Territory.create( code: '735' )
+Territory.create( code: '740' )
+Territory.create( code: '745' )
+Territory.create( code: '750' )
+Territory.create( code: '760' )
+Territory.create( code: '765' )
+Territory.create( code: '770' )
+Territory.create( code: '775' )
+Territory.create( code: '780' )
+Territory.create( code: '790' )
+Territory.create( code: '795' )
+
+

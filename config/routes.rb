@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  resources :sales_reps
+
+  resources :lost_accounts
+
+  resources :territories
+
   resources :tracings
 
   get 'tracings/index'
