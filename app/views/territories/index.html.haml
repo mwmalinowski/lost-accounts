@@ -1,0 +1,21 @@
+%h1 Listing territories
+
+%table
+  %tr
+    %th Code
+    %th Type
+    %th
+    %th
+    %th
+
+  - @territories.each do |territory|
+    %tr
+      %td= territory.code
+      %td= territory.type
+      %td= link_to 'Show', territory
+      %td= link_to 'Edit', edit_territory_path(territory)
+      %td= link_to 'Destroy', territory, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Territory', new_territory_path
