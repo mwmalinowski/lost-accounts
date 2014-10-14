@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   resources :tracings
 
+  get 'territory/:code' => 'territories#show_one'
   get 'tracings/index'
   get 'tracings/inside/:inside' => 'tracings#inside'
 

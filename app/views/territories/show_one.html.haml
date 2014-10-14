@@ -1,0 +1,13 @@
+%p#notice= notice
+
+%p
+  %b Code:
+  = @territory.code
+%p
+  %b Sales Rep:
+  = @sales_rep.name
+
+
+= link_to 'Edit', edit_territory_path(@territory)
+\|
+= link_to 'Back', territories_path

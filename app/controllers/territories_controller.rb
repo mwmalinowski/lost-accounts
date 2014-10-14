@@ -12,6 +12,11 @@ class TerritoriesController < ApplicationController
   def show
   end
 
+  def show_one
+    @territory = Territory.find_by_code(params[:code])
+    @sales_rep = SalesRep.find(@territory.sales_rep_id)
+  end
+
   # GET /territories/new
   def new
     @territory = Territory.new
@@ -69,6 +74,6 @@ class TerritoriesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def territory_params
-      params.require(:territory).permit(:code, :type)
+      params.require(:territory).permit(:code,:sales_rep_id)
     end
 end
