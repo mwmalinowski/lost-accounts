@@ -1,0 +1,22 @@
+{
+  "name": "lost-accounts",
+  "version": "1.0.0",
+  "description": "Project to display lost accounts data and allow sales reps to tag accounts.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mwmalinowski/lost-accounts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mwmalinowski/lost-accounts/issues"
+  },
+  "homepage": "https://github.com/mwmalinowski/lost-accounts",
+  "dependencies": {
+    "express": "^4.10.4"
+  }
+}
